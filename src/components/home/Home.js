@@ -3,7 +3,6 @@ import React from "react";
 // import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { withRouter } from "react-router-dom";
-
 //Components, styles, & assets
 import s from "./Home.module.scss";
 
