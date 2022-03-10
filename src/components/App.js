@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import StreamShow from './streams/StreamShow';
 // import StreamDelete from './streams/StreamDelete';
 // import StreamList from './streams/StreamList';
-import Header from './Header';
+import Header from './header/Header';
 import Home from "./home/Home";
 
 
