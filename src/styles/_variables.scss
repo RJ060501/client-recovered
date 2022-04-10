@@ -8,7 +8,6 @@ $glyphicons-halflings-font-base-size: 14px !default;
 
 $glyphicons-halflings-font-path: '../fonts/glyphicons' !default;
 $fa-font-path: '../fonts/font-awesome' !default;
-$fa-font-path: "../webfonts";
 
 /*
  * Typography
@@ -24,8 +23,6 @@ $font-size-index:         0.7rem;
 $font-family-base: 'Montserrat', sans-serif;
 
 $headings-font-weight: 400;
-
-$subtle-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 
 // Color system
 //
@@ -55,19 +52,9 @@ $teal:    #3abf94 !default;
 $cyan:    #17a2b8 !default;
 
 $theme-colors: (
-  primary: #2A2153,
-  primary-light: #564980,
-  primary-dark: #05002A,
-  secondary1: #95D6BE,
-  secondary1-light: #BDE3D5,
-  secondary1-dark: #63A48C,
-  secondary2: #F7A7AB,
-  secondary2-light: #FFC8CB,
-  secondary2-dark: #D06A6F,
-  secondary3: #E9D563,
-  secondary3-light: #EFE18F,
-  secondary3-dark: #A3933C,
-  success: #95D6BE, //$teal,
+  primary: $blue,
+  secondary: $gray-600,
+  success: $teal,
   info: $purple,
   warning: $yellow,
   danger: $red,
@@ -75,11 +62,12 @@ $theme-colors: (
   inverse: $gray-700,
   gray: $gray-300,
   light: $gray-100,
-  default: #E9ECEF,
-  success-light: #ECFAEC,
-  info-light: #F2FAFA,
-  warning-light: #FDF7E6,
-  danger-light: #FFF2EF
+  default: #e9ecef,
+  primary-light: #dee4ee,
+  success-light: #ecfaec,
+  info-light: #f2fafa,
+  warning-light: #fdf7e6,
+  danger-light: #fff2ef,
 );
 
 $link-color: #218bc3;

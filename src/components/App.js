@@ -14,6 +14,7 @@ const App = () => {
     <div className='ui container'>
       <BrowserRouter>
         <div>
+          {/* <p>Any component that is not a child of BrowserRouter cannont contain any react-router related components.</p> */}
           <Header />
           <Routes>
             <Route path='/' exact component={Home} />

@@ -1,4 +1,11 @@
-import { SIGN_IN, SIGN_OUT } from './types';
+import { SIGN_IN, SIGN_OUT, UPDATE_FORM_STATE } from './types';
+
+// Action Creators
+export const updateFormState = (form, state) => ({
+  type: UPDATE_FORM_STATE,
+  form,
+  payload: state
+})
 
 export const signIn = (userId) => {
   return {
