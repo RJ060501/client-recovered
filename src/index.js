@@ -4,13 +4,24 @@ import { Provider } from "react-redux";
 import thunk from 'redux-thunk';
 // Store create here, make seperate index file?
 import { createStore, applyMiddleware, compose, combineReducers } from "redux";
+import { configureStore } from '@reduxjs/toolkit';
 import finalFormReducer from './actions/finalForm';
 // import 'semantic-ui-css/semantic.min.css';
 import App from "./components/App";
 import reducers from "./reducers";
+import axios from 'axios';
+
+const token = localStorage.getItem('token');
+if (token) {
+    axios.defaults.headers.common['Authorization'] = "Bearer " + token;
+}
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
+// DEPRICATED
+// const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
+const store = configureStore({
+  reducer: reducers
+})
 // const store = (typeof window !== 'undefined' && window.devToolsExtension
 //   ? window.devToolsExtension()(createStore)
 //   : createStore)(reducer)
