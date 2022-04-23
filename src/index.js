@@ -9,9 +9,6 @@ import finalFormReducer from './actions/finalForm';
 import App from "./components/App";
 import reducers from "./reducers";
 
-const reducer = combineReducers({
-  finalForm: finalFormReducer
-})
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
 // const store = (typeof window !== 'undefined' && window.devToolsExtension
