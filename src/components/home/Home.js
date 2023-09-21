@@ -8,12 +8,12 @@ import s from "./Home.module.scss";
 
 // class Home extends React.Component {
 //   render() {
-    
+
 //   }
 // }
 
 // Home.PropTypes = {
-  
+
 // }
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
       <div>
         <div className={s.homeHeader}>
           <h1 className={s.welcome}>Welcome</h1>
-          <span className={s.firstLast}>First Last</span>
+          <span className={s.firstLast}>User</span>
         </div>
         <div className={s.homeBody}>
           <div className={s.boxesContainer}>
@@ -33,10 +33,13 @@ const Home = () => {
               }}
             >
               <FontAwesomeIcon className={s.heartIcon} icon="heart" />
-              <h1 className={s.communityTiles}>Communuty Tiles</h1>
+              <h1 className={s.communityTiles}>Software Developer</h1>
               <p className={s.communityTilesDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor insididunt ut labore et dolore magna aliqua.
+                A software Developer, or Computer Software Developer, is responsible
+                for using their knowledge of programming languages to design software programs. Their duties include
+                meeting with clients to determine theri software needs, coding and testing software to ensure
+                functionality and updating software programs to refine compononents like cybersecurity measures
+                and data storage capacities.
               </p>
             </div>
             <div
@@ -46,10 +49,18 @@ const Home = () => {
               }}
             >
               <FontAwesomeIcon className={s.sitemapIcon} icon="sitemap" />
-              <h1 className={s.userJourneys}>User Journeys</h1>
+              <h1 className={s.userJourneys}>Typical Responsibilities:</h1>
               <p className={s.userJourneysDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor insididunt ut labore et dolore magna aliqua.
+                Collaborating with management, departments and customers to identify end-user requirements and specifications.
+              </p>
+              <p className={s.userJourneysDescription}>
+                Design algorithms and flowcharts to create new software programs and systems.
+              </p>
+              <p className={s.userJourneysDescription}>
+                Produce efficient and code based on requirements.
+              </p>
+              <p className={s.userJourneysDescription}>
+                Compile and assess user feedback to improve software performance.
               </p>
             </div>
           </div>

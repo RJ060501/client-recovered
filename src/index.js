@@ -11,10 +11,21 @@ import App from "./components/App";
 import reducers from "./reducers";
 import axios from 'axios';
 
-const token = localStorage.getItem('token');
-if (token) {
-    axios.defaults.headers.common['Authorization'] = "Bearer " + token;
-}
+// const token = localStorage.getItem('token');
+// if (token) {
+//     axios.defaults.headers.common['Authorization'] = "Bearer " + token;
+// }
+
+axios.get('http://www.google.com')
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+  .then(() => {
+    console.log('All done!');
+  });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // DEPRICATED

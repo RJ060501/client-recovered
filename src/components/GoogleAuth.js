@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { signIn, signOut } from "../actions/auth";
 
+// WILL ALL BE DEPRICATED - Migration Guide: https://developers.google.com/identity/gsi/web/guides/migration#popup-mode
 class GoogleAuth extends React.Component {
   //initiates O Auth library
   componentDidMount() {
